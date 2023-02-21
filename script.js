@@ -1,36 +1,35 @@
 const container = document.querySelector('#container')
 
-        for (let i = 0; i < 16; i++){
-            const row = document.createElement('div')
-            row.classList.add('row')
+for (let i = 0; i < 16; i++){
+    const row = document.createElement('div')
+    row.classList.add('row')
 
-            for (let j = 0; j < 16; j++){
-                const square = document.createElement('div')
-                square.classList.add('square')
-                square.style.height = 35.50 + 'px'
-                square.style.width = 35.50 + 'px'
-                square.style.border = '1px solid black'
-
-
-                row.appendChild(square)
-            }
-
-            container.appendChild(row)
-
-            // Event listener 
-        const squares = document.querySelectorAll('.square')
-
-        squares.forEach(square => {
-            square.addEventListener('mouseover', () => {
-                square.style.backgroundColor = 'black'
-            })
-            square.addEventListener('mouseout', () =>{
-                square.style.backgroundColor = 'white'
-            })
-        })
+    for (let j = 0; j < 16; j++){
+        const square = document.createElement('div')
+        square.classList.add('square')
+        square.style.height = 35.50 + 'px'
+        square.style.width = 35.50 + 'px'
+        square.style.border = '1px solid black'
 
 
-        }
+        row.appendChild(square)
+    }
+
+    container.appendChild(row)
+    }
+
+    // Event listener 
+const squares = document.querySelectorAll('.square')
+
+squares.forEach(square => {
+    square.addEventListener('mouseover', () => {
+        square.style.backgroundColor = 'black'
+    })
+    square.addEventListener('mouseout', () =>{
+        square.style.backgroundColor = 'aquamarine'
+    })
+})
+
 
 
             // function to run when boton cicked
@@ -78,7 +77,7 @@ const container = document.querySelector('#container')
                 square.style.backgroundColor = 'black'
             })
             square.addEventListener('mouseout', () =>{
-                square.style.backgroundColor = 'white'
+                square.style.backgroundColor = 'aquamarine'
             })
         });
         

@@ -1,6 +1,13 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .row {
     display: flex;
-    justify-content: center; 
+    justify-content: center 
   }
   /*.square {
     width: 50px;
